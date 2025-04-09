@@ -1,0 +1,25 @@
+{
+  "name": "hebo-embeddings",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "fastify start src/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sandyandi/hebo-embeddings.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sandyandi/hebo-embeddings/issues"
+  },
+  "homepage": "https://github.com/sandyandi/hebo-embeddings#readme",
+  "description": "",
+  "dependencies": {
+    "fastify": "^5.2.2",
+    "fastify-cli": "^7.4.0",
+    "portkey-ai": "^1.8.0"
+  }
+}

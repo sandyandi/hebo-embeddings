@@ -1,0 +1,7 @@
+services:
+  api:
+    command: ['npm', 'start']
+    volumes:
+      - ./api:/api
+    ports:
+      - 80:3000

@@ -1,0 +1,6 @@
+name: hebo-embeddings
+
+services:
+  api:
+    image: node:23-alpine
+    working_dir: /api
