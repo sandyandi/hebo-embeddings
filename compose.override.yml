@@ -1,0 +1,10 @@
+# This will automatically override values from compose.yml
+# Run with the usual `docker compose -f compose.yml <your command>`
+services:
+  api:
+    build:
+      target: api_dev
+    volumes:
+      - ./api:/app
+    ports:
+      - 8002:80

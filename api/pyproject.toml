@@ -1,0 +1,16 @@
+[project]
+name = "hebo-embeddings"
+version = "0.1.0"
+description = ""
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "fastapi[standard]>=0.115.12",
+    "litellm>=1.65.4.post1",
+    "pydantic-settings>=2.8.1",
+]
+
+[dependency-groups]
+dev = [
+    "ruff>=0.11.4",
+]

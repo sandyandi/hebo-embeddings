@@ -1,0 +1,6 @@
+name: hebo-embeddings
+
+services:
+  api:
+    build:
+      context: api

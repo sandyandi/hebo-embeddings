@@ -1,0 +1,14 @@
+# This will override values from compose.yml
+# Run with `docker compose -f compose.yml -f compose.prod.yml <your command>`
+services:
+  api:
+    build:
+      target: api_prod
+
+  nginx:
+    build:
+      context: ./nginx
+    depends_on:
+      - api
+    ports:
+      - 80:80
