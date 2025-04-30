@@ -17,10 +17,10 @@ RUN --mount=type=cache,target=$UV_CACHE_DIR \
 # Dev API image
 FROM api_base AS api_dev
 
-CMD ["fastapi", "dev", "main.py", "--host", "0.0.0.0", "--port", "80"]
+CMD ["fastapi", "dev", "src/main.py", "--host", "0.0.0.0", "--port", "80"]
 
 
 # Prod API image
 FROM api_base AS api_prod
 
-CMD ["fastapi", "run", "main.py", "--port", "8000"]
+CMD ["fastapi", "run", "src/main.py", "--port", "8000"]
